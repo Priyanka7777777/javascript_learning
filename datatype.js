@@ -30,3 +30,28 @@ const muFunction = function(){
 }
 
 //https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+/************TYPE OF MEMORY************
+STACK(primitive), whenwhere we declare another variable we get copy of value of it when variable are stored in stack
+
+HEAP (non primitive) , we get reference of variable when we have variable stored in heap
+*/
+let myyoutube = "ramshyam"
+let anothername = myyoutube ;
+anothername = "tom";
+console.log(anothername);
+console.log(myyoutube);
+
+// 
+
+let userone = {
+    email: "user@gmail.com",
+    upi:"user"
+
+}
+let usertwo =userone
+usertwo.email = "priyanka@gmail.com"
+console.log(userone.email);
+console.log(usertwo.email);
+
